@@ -3,9 +3,10 @@ layout: splash
 permalink: /
 hidden: False
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/splash.png
-excerpt: <br /><br /><br /><br /><br /><br /><br />
+  # overlay_color: "#5e616c"
+  # overlay_image: /assets/images/splash.png
+  image: /assets/images/splash.png
+excerpt: 
 intro: 
   - excerpt: "Thank you for visiting my portfolio site.<br /><br />
     I'm Seunghwan Lee, an engineer specializing in Machine Learning, Computer Vision, and Medical AI. In my career as a developer, I have always prioritized:<br /><br />
