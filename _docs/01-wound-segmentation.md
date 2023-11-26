@@ -1,5 +1,5 @@
 ---
-title: "2D Diabetic Foot Ulcer Segmentation"
+title: "AiD Regen: 2D Diabetic Foot Ulcer Segmentation"
 permalink: /docs/wound-segmentation/
 last_modified_at: 2023-11-19
 classes: wide
@@ -7,13 +7,14 @@ classes: wide
 
 ## Introduction
 
-I've developed a system that generates 3D wound models combining 2D semantic segmentation with 3D reconstruction so that they can be printed via 3D bio-printers during the surgery to treat diabetic foot ulcers (DFUs).
+I've developed a system that generates 3D wound models combining 2D semantic segmentation with 3D reconstruction so that they can be printed via 3D bio-printers during the surgery to treat diabetic foot ulcers (DFUs).   
+
+The 2D segmentation module based on deep learning model aims to simplify the surgery process and reduce difficulties of elaborate drawing of wound area.
 
 <figure>
   <img src="{{ '/assets/images/dfu-procedure.png' | relative_url }}" >
 </figure>
 
-The 2D segmentation based on deep learning model was aimed to simplify the surgery process and reduce difficulties of elaborate drawing of wound area.
 
 ## Dataset
 
