@@ -37,7 +37,7 @@ feature_row:
     url: "/docs/comming-soon/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/thumbnail/shockable-rhythm.png
     alt: "customizable"
     title: "<font size=3 color='#7f7f7f'><i>#ML #Medical</i></font><br />
             Electrocardiogram Shockable Rhythm Detection"
@@ -61,7 +61,7 @@ feature_row:
     url: "/docs/comming-soon/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/thumbnail/licence-plate-recognition.png
     alt: "customizable"
     title: "<font size=3 color='#7f7f7f'><i>#ML #CV</i></font><br />
             Licence Plate Recognition System"
