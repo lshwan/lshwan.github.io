@@ -73,7 +73,7 @@ feature_row:
     alt: "customizable"
     title: "<br />Reflexo: Automatic Calf Stretching Machine"
     excerpt: "<i>C, Embedded System</i>"
-    url: "/docs/comming-soon/"
+    url: "https://tv.naver.com/v/731372?playlistNo=64624"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 ---
