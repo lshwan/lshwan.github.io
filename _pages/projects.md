@@ -26,7 +26,7 @@ feature_row:
     title: "<font size=3 color='#7f7f7f'><i>#ML #CV</i></font><br />
             InFusionSurf: Neural RGB-D Surface Reconstruction"
     excerpt: "<i>Pytorch, Kubeflow, GCP Vertex AI</i>"
-    url: "/docs/comming-soon/"
+    url: "https://rokit-healthcare.github.io/InFusionSurf/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/thumbnail/camera-calibration.png

@@ -35,7 +35,7 @@ method. (S2)
 2. I performed another oversampling to balance bleeding and non-bleeding wound images. (S3)
 3. I randomly sampled 256 X 256 sized wound and background image patches, guaranteeing a quarter of the patches to be wound samples.
 
-## Model
+## Model Design
 
 I used a CNN-based model, DeepLabv3, and advanced with scale attention mechanism to it. The choice of the CNN-based model was origined by their data-efficient characteristics on small datasets. I also applied the attention mechanism to preserve details of wound boundaries. 
 
@@ -45,7 +45,9 @@ I used a CNN-based model, DeepLabv3, and advanced with scale attention mechanism
 
 ## Human-In-The-Loop Interaction
 
-Deep learning model might occasionally produce unexpected predictions; however, such errors can be disastrous in the risksensitive medical field. Moreover clinical decisions during operation often vary from clinician to clinician. I designed a HITL user interaction to handle inter-operator variability. It consists of three major interactions.
+Deep learning model might occasionally produce unexpected predictions; however, such errors can be disastrous in the risksensitive medical field. Moreover clinical decisions during operation often vary from clinician to clinician.    
+
+I designed a HITL user interaction to handle inter-operator variability and maximize the model performance. It consists of three major interactions.
 
 1. Seed point declaration to clarify the target wound.
 2. Adaptive thresholding to sementically expand or shirink the wound boundary.
