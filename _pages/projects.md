@@ -13,7 +13,7 @@ feature_row:
     url: "/docs/wound-segmentation/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/thumbnail/3d-model-generation.png
     alt: "customizable"
     title: "<font size=3 color='#7f7f7f'><i>#CV #Medical</i></font><br />
             AiD Regen: 3D Bioprintable Patch Generation"
@@ -40,20 +40,20 @@ feature_row:
   - image_path: /assets/images/thumbnail/shockable-rhythm.png
     alt: "customizable"
     title: "<font size=3 color='#7f7f7f'><i>#ML #Medical</i></font><br />
-            Electrocardiogram Shockable Rhythm Detection"
+            Electrocardiogram Shockable Rhythm Detection For AED"
     excerpt: "<i>Scikit-Learn, C, Embedded System</i>"
     url: "/docs/comming-soon/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "<font size=3 color='#7f7f7f'><i>#Medical</i></font><br />
-            Electrocardiogram Arrhythmia Detection"
-    excerpt: "<i>C, Embedded System</i>"
-    url: "/docs/comming-soon/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-customizable-feature.png
+  # - image_path: /assets/images/mm-customizable-feature.png
+  #   alt: "customizable"
+  #   title: "<font size=3 color='#7f7f7f'><i>#Medical</i></font><br />
+  #           Electrocardiogram Arrhythmia Detection"
+  #   excerpt: "<i>C, Embedded System</i>"
+  #   url: "/docs/comming-soon/"
+  #   btn_class: "btn--primary"
+  #   btn_label: "Learn more"
+  - image_path: /assets/images/thumbnail/blood-pressure-estimation.png
     alt: "customizable"
     title: "<font size=3 color='#7f7f7f'><i>#Medical</i></font><br />
             Oscillometric Blood Pressure Estimation"

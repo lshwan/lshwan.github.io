@@ -25,7 +25,7 @@ featured_projects:
     url: "/docs/wound-segmentation/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/thumbnail/3d-model-generation.png
     alt: "customizable"
     title: "<font size=3 color='#7f7f7f'><i>#CV #Medical</i></font><br />
             AiD Regen: 3D Bioprintable Patch Generation"

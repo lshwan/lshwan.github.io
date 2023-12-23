@@ -1,7 +1,7 @@
 ---
 title: "AiD Regen: 2D Diabetic Foot Ulcer Segmentation"
 permalink: /docs/wound-segmentation/
-last_modified_at: 2023-11-19
+last_modified_at: 2023-12-24
 classes: wide
 ---
 
@@ -37,17 +37,29 @@ method. (S2)
 
 ## Model
 
-I used a CNN-based model, DeepLabv3, and advanced with scale attention mechanism to it. The choice of the CNN-based model was origined by their data-efficient characteristics on small datasets.
+I used a CNN-based model, DeepLabv3, and advanced with scale attention mechanism to it. The choice of the CNN-based model was origined by their data-efficient characteristics on small datasets. I also applied the attention mechanism to preserve details of wound boundaries. 
 
 <figure>
   <img src="{{ '/assets/images/wound-segmentation-model.png' | relative_url }}">
+</figure>
+
+## Human-In-The-Loop Interaction
+
+Deep learning model might occasionally produce unexpected predictions; however, such errors can be disastrous in the risksensitive medical field. Moreover clinical decisions during operation often vary from clinician to clinician. I designed a HITL user interaction to handle inter-operator variability. It consists of three major interactions.
+
+1. Seed point declaration to clarify the target wound.
+2. Adaptive thresholding to sementically expand or shirink the wound boundary.
+3. Manual drawing or modification.
+
+<figure>
+  <img src="{{ '/assets/images/human-in-the-loop.png' | relative_url }}">
 </figure>
 
 ## Performences
 
 - The scale attention machanism outperforms the native DeepLabV3 model (DeepLabV3 vs. Our model).
 - The data preprocessing pipeline shows their effectiveness on segmentation performances (S2, S3). 
-- <a href="/docs/human-in-the-loop/">Human-AI-interaction</a> futher improves the performences and enhances clinical customizability (HITL).
+- Human-AI-interaction futher improves the performences and enhances clinical customizability (HITL).
 
 <figure>
   <img src="{{ '/assets/images/model-performances.png' | relative_url }}">
