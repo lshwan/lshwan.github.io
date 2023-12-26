@@ -7,9 +7,9 @@ classes: wide
 
 ## Introduction
 
-I've developed a system that generates 3D wound models combining 2D semantic segmentation with 3D reconstruction so that they can be printed via 3D bio-printers during the surgery to treat diabetic foot ulcers (DFUs).   
+I have developed a system that generates 3D wound models by combining 2D semantic segmentation with 3D reconstruction. This enables the models to be printed using 3D bio-printers during surgeries for treating diabetic foot ulcers (DFUs).
 
-The 2D segmentation module based on deep learning model aims to simplify the surgery process and reduce difficulties of elaborate drawing of wound area.
+The 2D segmentation module, based on a deep learning model, is designed to simplify the surgical process and minimize the complexities involved in the drawing process of wound areas.
 
 <figure>
   <img src="{{ '/assets/images/dfu-procedure.png' | relative_url }}" >
@@ -18,26 +18,25 @@ The 2D segmentation module based on deep learning model aims to simplify the sur
 
 ## Dataset
 
-Our business team collected 818 DFU images from global clinical studies. I built colaborative labeling pipeline for high-quality label.
+Our business team has collected 818 DFU images from global clinical studies. I established a collaborative labeling pipeline to ensure high-quality labels.
 
-As we did not control the photo capturing process in order to gather real-world data, the dataset contains three different types of imbalances.
+Since we aimed to capture real-world data without controlling the photo capturing process, our dataset exhibits three types of imbalances:
 
-1. The number of images per patient highly varies; about half of the images are from 11 out of 67 patients.
-2. Clinical complications such as heavy bleeding are rare; there are crucial to the model perfomances.
-3. DFU areas are sparse in images; only 3.4% of the total pixels are classified as DFU.
+1. The number of images per patient varies significantly; approximately half of the images are from just 11 of the 67 patients.
+2. Clinical complications, such as heavy bleeding, are infrequent but crucial for the model's performance.
+3. DFU areas are sparsely represented in images, constituting only 3.4% of the total pixels.
 
 ## Data Preprocessing Pipeline
 
-I designed a preprocessing pipeline to handle the imbalances of the dataset.
+To address these imbalances, I developed a preprocessing pipeline:
 
-1. In order to balance the number of images per patient, I applied a deterministic oversampling
-method. (S2)
-2. I performed another oversampling to balance bleeding and non-bleeding wound images. (S3)
-3. I randomly sampled 256 X 256 sized wound and background image patches, guaranteeing a quarter of the patches to be wound samples.
+1. I implemented a deterministic oversampling method to balance the number of images per patient. (S2)
+2. A separate oversampling process was conducted to balance images of bleeding and non-bleeding wounds. (S3)
+3. I randomly sampled 256 x 256 sized patches of wound and background images, ensuring that a quarter of the patches contained wound samples.
 
 ## Model Design
 
-I used a CNN-based model, DeepLabv3, and advanced with scale attention mechanism to it. The choice of the CNN-based model was origined by their data-efficient characteristics on small datasets. I also applied the attention mechanism to preserve details of wound boundaries. 
+I opted for a CNN-based model, DeepLabv3, enhanced with a scale attention mechanism. The choice of a CNN-based model was driven by its data-efficient characteristics on small datasets. Additionally, I incorporated an attention mechanism to preserve details of wound boundaries. 
 
 <figure>
   <img src="{{ '/assets/images/wound-segmentation-model.png' | relative_url }}">
@@ -45,12 +44,12 @@ I used a CNN-based model, DeepLabv3, and advanced with scale attention mechanism
 
 ## Human-In-The-Loop Interaction
 
-Deep learning model might occasionally produce unexpected predictions; however, such errors can be disastrous in the risksensitive medical field. Moreover clinical decisions during operation often vary from clinician to clinician.    
+Deep learning models can sometimes yield unpredictable predictions, which can be critical in the risk-sensitive medical field. Furthermore, clinical decisions during operations often vary among clinicians.
 
-I designed a HITL user interaction to handle inter-operator variability and maximize the model performance. It consists of three major interactions.
+To address this, I designed a Human-In-The-Loop (HITL) user interaction system to manage inter-operator variability and maximize model performance, including:
 
-1. Seed point declaration to clarify the target wound.
-2. Adaptive thresholding to sementically expand or shirink the wound boundary.
+1. Seed point declaration to clarify the target wound area.
+2. Adaptive thresholding for semantic expansion or shrinkage of the wound boundary.
 3. Manual drawing or modification.
 
 <figure>
@@ -60,7 +59,7 @@ I designed a HITL user interaction to handle inter-operator variability and maxi
 ## Performences
 
 - The scale attention machanism outperforms the native DeepLabV3 model (DeepLabV3 vs. Our model).
-- The data preprocessing pipeline shows their effectiveness on segmentation performances (S2, S3). 
+- The data preprocessing pipeline proves effective in improving segmentation accuracy. (S2, S3). 
 - Human-AI-interaction futher improves the performences and enhances clinical customizability (HITL).
 
 <figure>

@@ -18,7 +18,7 @@ feature_row:
     title: "<font size=3 color='#7f7f7f'><i>#CV #Medical</i></font><br />
             AiD Regen: 3D Bioprintable Patch Generation"
     excerpt: "<i>Open3D, Scipy, Django</i>"
-    url: "/docs/comming-soon/"
+    url: "/docs/3d-model-generation/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/thumbnail/infusionsurf.png
