@@ -5,6 +5,8 @@ last_modified_at: 2023-12-24
 classes: wide
 ---
 
+Accepted to [CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Chae_Generating_3D_Bio-Printable_Patches_Using_Wound_Segmentation_and_Reconstruction_To_CVPR_2022_paper.html)
+
 ## Introduction
 
 I have developed a system that generates 3D wound models by combining 2D semantic segmentation with 3D reconstruction. This enables the models to be printed using 3D bio-printers during surgeries for treating diabetic foot ulcers (DFUs).
