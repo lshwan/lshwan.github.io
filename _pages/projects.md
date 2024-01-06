@@ -34,7 +34,7 @@ feature_row:
     title: "<font size=3 color='#7f7f7f'><i>#CV</i></font><br />
             iPad TrueDepth Camera Calibration System"
     excerpt: "<i>OpenCV, FastAPI</i>"
-    url: "/docs/comming-soon/"
+    url: "/docs/camera-calibration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/thumbnail/shockable-rhythm.png
@@ -42,7 +42,7 @@ feature_row:
     title: "<font size=3 color='#7f7f7f'><i>#ML #Medical</i></font><br />
             Electrocardiogram Shockable Rhythm Detection For AED"
     excerpt: "<i>Scikit-Learn, C, Embedded System</i>"
-    url: "/docs/comming-soon/"
+    url: "/docs/shockable-rhythm/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   # - image_path: /assets/images/mm-customizable-feature.png
@@ -58,7 +58,7 @@ feature_row:
     title: "<font size=3 color='#7f7f7f'><i>#Medical</i></font><br />
             Oscillometric Blood Pressure Estimation"
     excerpt: "<i>C, Matlab, Embedded System</i>"
-    url: "/docs/comming-soon/"
+    url: "/docs/blood-pressure-estimation/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/thumbnail/licence-plate-recognition.png
@@ -66,7 +66,7 @@ feature_row:
     title: "<font size=3 color='#7f7f7f'><i>#ML #CV</i></font><br />
             Licence Plate Recognition System"
     excerpt: "<i>Keras</i>"
-    url: "/docs/comming-soon/"
+    url: "/docs/licence-plate-recognition/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/thumbnail/reflexo.png
